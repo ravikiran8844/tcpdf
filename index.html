@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <style>
+    page {
+  background: white;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 0.5cm;
+  box-shadow: 0 0 0.5cm rgba(0,0,0,0.5);
+}
+page[size="A4"] {  
+  width: 21cm;
+  height: 29.7cm; 
+}
+page[size="A4"][layout="portrait"] {
+  width: 29.7cm;
+  height: 21cm;  
+}
+@media print {
+  body, page {
+    margin: 0;
+    box-shadow: 0;
+  }
+}
+    img{
+      max-width: 100%;
+      height: auto;
+    }
+    table{
+        border-spacing:10px;
+    }
+    table table{
+        border-spacing: 10px 0px;
+    }
+    table th, table td{
+      padding-bottom:20px;
+    }
+    table ul{
+        padding: 10px 20px 10px 50px;
+    }
+    .list-style-1{
+        list-style-image:url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 38 38' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M19.0003 34.8334C27.7451 34.8334 34.8337 27.7448 34.8337 19.0001C34.8337 10.2553 27.7451 3.16675 19.0003 3.16675C10.2556 3.16675 3.16699 10.2553 3.16699 19.0001C3.16699 27.7448 10.2556 34.8334 19.0003 34.8334ZM17.2808 21.0204C17.1478 21.9071 17.9015 22.6386 18.7977 22.6386H19.5418C19.7533 22.6386 19.9567 22.5581 20.1109 22.4133C20.265 22.2686 20.3582 22.0706 20.3715 21.8596C20.4617 21.0268 20.8196 20.2984 21.4418 19.6762L22.4393 18.6945C23.2183 17.9107 23.763 17.1998 24.0749 16.5617C24.3868 15.9142 24.542 15.2286 24.542 14.505C24.542 12.9137 24.0622 11.6835 23.1027 10.8158C22.1432 9.93866 20.7942 9.50008 19.0557 9.50008C17.3331 9.50008 15.973 9.95925 14.9707 10.8792C14.3775 11.4294 13.9437 12.1296 13.7152 12.9058C13.4238 13.8622 14.2852 14.6966 15.2827 14.6966C16.1282 14.6966 16.7599 14.0078 17.3473 13.3666C17.4297 13.2763 17.5104 13.1861 17.5912 13.1006C17.9617 12.7095 18.4493 12.5147 19.0557 12.5147C20.3351 12.5147 20.9747 13.2336 20.9747 14.6712C20.9747 15.1478 20.8512 15.6038 20.6058 16.0377C20.3604 16.4636 19.8632 17.0209 19.1175 17.7097C18.3797 18.3905 17.8714 19.0856 17.5912 19.7917C17.4534 20.1417 17.3505 20.5518 17.2808 21.0204ZM17.3711 25.1545C17.0022 25.5203 16.8169 25.9889 16.8169 26.5589C16.8169 27.121 16.9974 27.5849 17.3584 27.9522C17.7273 28.3164 18.2118 28.5001 18.8103 28.5001C19.4088 28.5001 19.887 28.3164 20.2496 27.9507C20.6185 27.5849 20.8037 27.121 20.8037 26.5589C20.8037 25.9889 20.6137 25.5203 20.2369 25.1545C19.868 24.7792 19.3914 24.5924 18.8103 24.5924C18.2277 24.5924 17.7495 24.7792 17.3711 25.1545Z' fill='%23E80808'/%3E%3C/svg%3E%0A");
+    }
+    .list-style-2{
+        list-style-image: url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 38 38' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='19' cy='19' r='16' fill='%2325B39E'/%3E%3Cpath d='M13.0098 18.755L16.2968 23L24.9878 16.009' stroke='white' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
+        }
+  </style>
+
+</head>
+
+<body>
+
+ <page>
+    <table width="100%" border="0" style="border: 2px solid #1C6EFF; padding: 10px;">
+        <tr>
+          <td>
+            <table>
+              <tr>
+                <td width="100px">
+                  <img src="./img1.png" alt="">
+                </td>
+                <td style="position: relative;">
+                  <div style=" display: flex;align-items: center; margin-bottom: 20px; ">
+                    <div style="font-weight: bold;font-size: 18px;">Height (in CM)</div>
+                    <div>
+                      <div style=" background: #E1F5FF; border: 1px dashed #0842A6; padding:10px 20px; width: fit-content; margin-left: 30px; ">Result: <span style=" color: #E80808; background: #FFCFCF; font-weight: bold; padding: 5px 20px; margin-left: 10px;">Short Stature (120cm)</span></div>
+                    </div>
+    
+                    <div style=" position: absolute; right: -20px; background: #E80808; color: #fff; width: 36px; height: 36px; border-radius: 50%; font-weight: bold; display: flex; align-items: center; justify-content: center; top: -10px; ">
+                        D
+                    </div>
+                  </div>
+          
+                  <div>
+                    Short Stature is a general term for people whose height is considerably below average compared to the height of their peers. While it can apply to adults, the term is more commonly used to refer to children. A child can be significantly shorter than their friends and still be perfectly health. Genetics is a major determinant of height.
+                  </div>
+          
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+    
+        <tr>
+          <td>
+            <table width="100%">
+              <tr>
+                <th width="50%" style=" background: #FFCFCF; padding: 10px; ">
+                  Causes/ Effect of these Parameters
+                </th>
+                <th  width="50%" style=" background: #C8FFDE; padding: 10px; ">
+                  What can you do about it
+                </th>
+              </tr>
+              <tr style=" background: #F3F3F3; ">
+                <td>
+                    <ul class="list-style-1">
+                        <li>
+                            The major reasons for short stature are: Constitutional Growth Delay- Some children simply develop later than others. These kids are small for their age and often enter puberty later; Genetics- If there are no underlying medical reasons why either parent is short, their child’s short stature may be perfectly healthy. Medical reason like hormonal or endocrinal disorder will present with symptoms like lethargy, fatigue and low concentration.
+                        </li>
+                    </ul>
+                </td>
+                <td>
+                    <ul class="list-style-2">
+                        <li>
+                            Only a doctor can determine whether your child’s short stature has a medical cause. This process takes time. The doctor will measure your child’s height, weight, limb length and family history. Treatment for short stature depends on the cause (e.g., Thyroid hormone replacement can be used to treat hypothyroidism, Growth hormone injections can treat GHD). For children who are naturally short, no treatment is necessary. Consult your Pediatrician.
+                        </li>
+                    </ul>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+    
+    
+    
+      </table>
+ </page>
+
+  
+</body>
+
+</html>
